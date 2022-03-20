@@ -1,8 +1,8 @@
-# [CAPSULE Themes](http://demos.creative-tim.com/argon-dashboard/pages/dashboard.html?ref=readme-ad2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/dogewp) [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](#)
+# [CAPSULE Themes](http://demos.creative-tim.com/argon-dashboard/pages/dashboard.html?ref=readme-ad2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/dogewp) 
 
 一个基于Bty1.1的模板
 
-![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aissue+is%3Aclosed)[![Apache-2.0](https://badgen.net/badge/license/Apache-2.0)](https://github.com/7doger/CAPSULE_Themes/blob/main/LICENSE)
+![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aissue+is%3Aclosed) [![Apache-2.0](https://badgen.net/badge/license/Apache-2.0)](https://github.com/7doger/CAPSULE_Themes/blob/main/LICENSE)
 
 ![Image](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview/Preview1.png)
 
