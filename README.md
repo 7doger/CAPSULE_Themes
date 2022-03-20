@@ -4,23 +4,23 @@
 
 ![version](https://img.shields.io/badge/version-1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/7doger/CAPSULE_Themes.svg)](https://github.com/7doger/CAPSULE_Themes/issues?q=is%3Aissue+is%3Aclosed)
 
-![Image](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg)
+![Image](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview_index.png)
 
-这个模板是我基于 [Argon Dashboard](https://github.com/creativetimofficial/argon-dashboard-laravel)+[TomatoIDC 默认主页](https://github.com/MercyCloudTeam/TomatoIDC)+[Hostker](https://www.hostker.com/) copy/拼接/移植而来，仅供学习使用。
+这个模板是我基于 [Argon Dashboard](https://github.com/creativetimofficial/argon-dashboard-laravel)+[TomatoIDC 默认主页](https://github.com/MercyCloudTeam/TomatoIDC)+[Hostker](https://www.hostker.com/) Copy/拼接/移植而来，仅供学习使用。
 
-注意：由于个人喜好原因，我没有用原模板自带的登录/注册页面，而是copy了hostker的页面。
+注意：由于个人喜好原因，我没有用原模板自带的登录/注册页面，而是抄了hostker的登录页面。
 
 
 ## 演示&截图
 
 
 
-- [CAPSULE.TOP](https://capsule.top)
+- [CAPSULE.TOP](https://capsule.top) - 官方演示站点
 
 
-| Dashboard page | User profile page | Tables page  |
-| --- | --- | ---  |
-| ![前台首页](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg) | ![后台首页](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg) | ![Tables pages](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg)
+| 前台首页 | 后台首页 | 
+| --- | --- | 
+| ![前台首页](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview_index.png) | ![后台首页](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg) | 
 
 
 ## 下载&安装
