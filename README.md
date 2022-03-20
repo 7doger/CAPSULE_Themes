@@ -6,7 +6,7 @@
 
 ![Image](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview.jpeg)
 
-这个模板是我基于 [Argon Dashboard](https://github.com/creativetimofficial/argon-dashboard-laravel)+[番茄主机默认主页](https://github.com/MercyCloudTeam/TomatoIDC)+[hostker](https://www.hostker.com/) copy/拼接/移植而来，仅供学习使用。
+这个模板是我基于 [Argon Dashboard](https://github.com/creativetimofficial/argon-dashboard-laravel)+[TomatoIDC 默认主页](https://github.com/MercyCloudTeam/TomatoIDC)+[hostker](https://www.hostker.com/) copy/拼接/移植而来，仅供学习使用。
 
 注意：由于个人喜好原因，我没有用原模板自带的登录/注册页面，而是copy了hostker的页面。
 
@@ -36,3 +36,11 @@
 
 The documentation for the Argon Dashboard is hosted at our [website](https://www.yuque.com/7doger/Themes).
 
+
+## 感谢列表
+
+感谢以下开源项目&个人或公司：
+
+- [Argon Dashboard](https://github.com/creativetimofficial/argon-dashboard-laravel)
+- [TomatoIDC](https://github.com/MercyCloudTeam/TomatoIDC)
+- [hostker](https://www.hostker.com/)
