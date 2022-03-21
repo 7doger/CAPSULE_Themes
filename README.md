@@ -2,7 +2,7 @@
 
 一个基于Bty1.1的模板
 
-![version](https://img.shields.io/badge/version-1.0-blue.svg) [![Apache-2.0](https://badgen.net/badge/license/Apache-2.0)](https://github.com/7doger/CAPSULE_Themes/blob/main/LICENSE)
+![version](https://img.shields.io/badge/version-1.1-blue.svg) [![Apache-2.0](https://badgen.net/badge/license/Apache-2.0)](https://github.com/7doger/CAPSULE_Themes/blob/main/LICENSE)
 
 ![Image](https://raw.githubusercontent.com/7doger/CAPSULE_Themes/main/Preview/Preview1.png)
 
