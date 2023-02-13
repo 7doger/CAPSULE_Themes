@@ -1,6 +1,6 @@
 # [CAPSULE Themes](http://demos.creative-tim.com/argon-dashboard/pages/dashboard.html?ref=readme-ad2) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/dogewp) 
 
-一个基于Bty1.1的粗糙模板
+一个基于Bty1.1的极其粗糙的模板
 
 ![version](https://img.shields.io/badge/version-1.1-blue.svg) [![Apache-2.0](https://badgen.net/badge/license/Apache-2.0)](https://github.com/7doger/CAPSULE_Themes/blob/main/LICENSE)
 
