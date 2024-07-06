@@ -30,7 +30,6 @@
 ## 下载&安装
 
 - [下载最新版 -  Github](https://github.com/7doger/CAPSULE_Themes/releases)
-- [下载最新版 - 阿育网盘](https://drive.ubi.plus/s/90TV)
 
 
 下载后直接覆盖到网站根目录即可（别忘记备份原来的模板，万一后悔了想换回来呢？）
