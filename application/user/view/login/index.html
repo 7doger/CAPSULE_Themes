@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>登录 CAPSULE</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/css/signv3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/css/animation.css">
+<link rel="shortcut icon" href="../favicon.ico">
+<meta name="viewport" content="width=500">
+<meta name="author" content="Mosaddek">
+<meta name="description" content="{$Think.const.WEB_DES}">
+<meta name="keyword" content="{$Think.const.WEB_KEY}">
+
+<header class="c a-fadeinT">
+    <a href="../"><h1 class="h1">CAPSULE</h1></a>
+    <ul>
+
+        <li><a href="https://wiki.qwqcloud.com" target="_blank">文档</a></li>
+    </ul>
+</header>
+<p class="msg"><b id="msg" class="empty"></b></p>
+<div id="sign" mode="login">
+    <div class="sign-shell a-fadeinB" style="background-image: url('https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/image/h0.png');">
+
+        <i></i>
+    </div>
+   <div class="sign-form">
+        <form method="post" id="login-from" class="login-from" >
+            			<p><input class="text" type="username" name="username" placeholder="用户名" required=""></p>
+            			<p><input class="text" type="password" name="password" placeholder="******" pattern=".+"></p>
+            			<input type="text" class="text" name="verify" placeholder="验证码">
+            			<br>
+            			<img src="./verify/?v1.0" class="text" style="width: 100%;">
+            			<br>
+            			<button type="submit" style='background-color:#2f7ddb' class="btn">立即登录</button>
+            			
+            			<div class="U-act">
+            				<p>尚未注册？</p>
+            				<a href="register.html">加入</a>
+            			</div>
+            			
+            			<div class="U-act">
+            				<p>忘记密码？</p>
+            				<a href="/user/retrieve.html">点我解决</a>
+            			</div><br>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/js/itorr21.js"></script>
+<script>
+!function(W,D){
+    var 
+    body=D.body;
+
+
+    $.msg=function(){
+        var 
+        o=$('#msg'),
+        _msgT,
+        OutTime=5000;
+        close=function(){
+            o.className='empty';
+        };
+        o.onmousemove=function(){
+            clearTimeout(_msgT);
+            _msgT=setTimeout(close,OutTime);
+        };
+        o.onclick=close;
+        
+        var r=function(t,outime){
+            OutTime=outime||5000;
+            o.innerHTML=t;
+            o.className='';
+            o.onmousemove();
+        };
+        r.close=close;
+        return r;
+    }();
+
+    Element.prototype.inputFunc=function(func){
+        o=this;
+        o.onkeydown=
+        o.onfocus=
+        o.onchange=
+        o.onkeypress=
+        o.onblur=func
+    };
+    $.msg('感谢使用CAPSULE~',9e5);
+    mode='login';
+    body.setAttribute('mode',mode);
+
+    var 
+    x,
+    T,
+    k,
+    mode='login',
+    Ex={
+        mail:/^\w[\w\-\.+]{0,}@(?:\w|\-)+\.[\w\-]{2,}\.?[\w\-]{0,}$/i,
+        password:/^.{5,}$/i,
+        phone:/^\d{8,13}$/
+    },
+    mailInput=$('input'),
+    //passwordInput=$('input[name="password"]'),
+    checkEmail=function(k){
+        
+
+        if(k.match(Ex.phone))
+            return $.msg('手机号登录已禁用，请尝试邮箱账号~');
+
+
+
+
+        body.setAttribute('state',(
+            mailInput.value.match(Ex.mail)
+        )?'yes':'no');
+    }
+
+    mailInput.inputFunc(function(o){
+        o=this;
+        checkForm();
+
+        //console.log(1,o.value)
+        if(o.value==k)
+            return;
+        //console.log(2,o.value)
+
+
+        k=o.value;
+
+        var A=o.value;
+
+        clearTimeout(T);
+        T=setTimeout(function(){
+            checkEmail(A);
+            //console.log(3,o.value);
+        },200);
+    });
+
+    //passwordInput.inputFunc(checkForm);
+
+
+
+    mailInput.focus();
+}(this,document);
+
+function gotoMember(rurl,gocode)
+{
+    if(gocode==1)
+    {
+        location.href='/domainpanel/'+rurl;
+    }else{
+        location.href=rurl;
+    }
+}
+
+
+</script>

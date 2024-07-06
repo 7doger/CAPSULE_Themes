@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>{$Think.const.WEB_NAME} -- 找回密码</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/css/signv3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/css/animation.css">
+<link rel="shortcut icon" href="../favicon.ico">
+<meta name="viewport" content="width=500">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Mosaddek">
+<meta name="description" content="{$Think.const.WEB_DES}">
+<meta name="keyword" content="{$Think.const.WEB_KEY}">
+
+<header class="c a-fadeinT">
+    <a href="../"><h1 class="h1">CAPSULE</h1></a>
+
+</header>
+<p class="msg"><b id="msg" class="empty"></b></p>
+<div id="sign" mode="login">
+    <div class="sign-shell a-fadeinB" style="background-image: url('https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/login/image/h0.png');">
+
+        <i></i>
+    </div>
+    <div class="sign-form">
+        <form method="post" id="login-from" class="login-from" >
+            <div class="U-act">
+            <h2>您的新密码</h2>
+            </div>
+            <div class="login-wrap">
+            <p><input type="text" class="text" name="new_pass" value="{$newPass}"></p>
+				<a class="btn" style='background-color:#2f7ddb' href="/index.html">返回主页</a>
+				<br>
+				<a class="btn" style='background-color:#2f7ddb' type="submit">去登录</button>

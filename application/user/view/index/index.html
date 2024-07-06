@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>CAPSULE 控制台</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Page plugins -->
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/css/argon.css?v=1.1.0" type="text/css">
+ {include file="public/header"}
+</head>
+
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="/user/index.html">
+          <img src="../../images/capsule_blue_0.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+              
+            <li class="nav-item">
+              <a class="nav-link active" href="#"  role="button" aria-expanded="true" aria-controls="navbar-dashboards">
+                <i class="fa fa-tachometer-alt text-primary"></i>
+                <span class="nav-link-text">控制台</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/user/order.html">
+                <i class="ni ni-app text-orange"></i>
+                <span class="nav-link-text">管理主机</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/user/shop.html">
+                <i class="fas fa-store text-green"></i>
+                <span class="nav-link-text">订购产品</span>
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/user/pay.html">
+                <i class="fas fa-wallet text-info"></i>
+                <span class="nav-link-text">充值兑换</span>
+              </a>
+            </li>
+
+          </ul>
+          
+          <!-- Divider -->
+          <hr class="my-3">
+          <!-- Heading -->
+          <h6 class="navbar-heading p-0 text-muted">功能</h6>
+          <!-- Navigation -->
+          <ul class="navbar-nav mb-md-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">
+                <i class="ni ni-spaceship"></i>
+                <span class="nav-link-text">工单客服</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://status.capsule.top/" target="_blank">
+                <i class="ni ni-world"></i>
+                <span class="nav-link-text">服务状态</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://wiki.qwqcloud.com/" target="_blank">
+                <i class="ni ni-book-bookmark"></i>
+                <span class="nav-link-text">帮助文档</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/user/logout.html">
+                <i class="ni ni-user-run"></i>
+                <span class="nav-link-text">退出登录</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <!-- Topnav -->
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Search form -->
+          <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+            <div class="form-group mb-0">
+              <div class="input-group input-group-alternative input-group-merge">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                </div>
+                <input class="form-control" placeholder="Search" type="text">
+              </div>
+            </div>
+            <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </form>
+          <!-- Navbar links -->
+          <ul class="navbar-nav align-items-center ml-md-auto">
+            <li class="nav-item d-xl-none">
+              <!-- Sidenav toggler -->
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item d-sm-none">
+              <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                <i class="ni ni-zoom-split-in"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-bell-55"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                <!-- Dropdown header -->
+                <div class="px-3 py-3">
+                  <h6 class="text-sm text-muted m-0">通知</h6>
+                </div>
+                <!-- List group -->
+                <div class="list-group list-group-flush">
+                  <a href="#!" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <!-- Avatar -->
+                        <img alt="Image placeholder" src="../../images/top1-1.jpg" class="avatar rounded-circle">
+                      </div>
+                      <div class="col ml--2">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0 text-sm"><i class="fas fa-bullhorn"></i> 官方通告</h4>
+                          </div>
+                          <div class="text-right text-muted">
+                            <small>已读</small>
+                          </div>
+                        </div>
+                        <p class="text-sm mb-0">
+<div id="通知">
+    <iframe align="center" width="100%" height="20" src="/pages/tongzhi.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                  
+                </div>
+                <!-- View all -->
+                <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">查看全部</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ni ni-ungroup"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default dropdown-menu-right">
+                <div class="row shortcuts px-4">
+                  
+                  <a href="/user/pay.html" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                      <i class="fas fa-wallet"></i>
+                    </span>
+                    <small>充值兑换</small>
+                  </a>
+                  <a href="/user/shop.html" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                      <i class="fas fa-store"></i>
+                    </span>
+                    <small>订购产品</small>
+                  </a>
+                  <a href="/user/order.html" class="col-4 shortcut-item">
+                    <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                      <i class="ni ni-app"></i>
+                    </span>
+                    <small>主机管理</small>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img alt="Image placeholder" src="http://q1.qlogo.cn/g?b=qq&nk={$userInfo.qq}&s=100"">
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">{$userInfo.username}</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">欢迎！</h6>
+                </div>
+                <a href="/user/index.html" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>个人中心</span>
+                </a>
+                <a href="javascript:userUp();" class="dropdown-item">
+                  <i class="ni ni-settings-gear-65"></i>
+                  <span>修改信息</span>
+                </a>
+                <a href="/user/shop.html" class="dropdown-item">
+                  <i class="ni ni-shop"></i>
+                  <span>订购产品</span>
+                </a>
+                <a href="/user/order.html" class="dropdown-item">
+                  <i class="ni ni-app"></i>
+                  <span>主机管理</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="/user/logout.html" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>退出登录</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+				<div class="container-fluid">
+					<div class="header-body">
+						<div class="row align-items-center py-4">
+							<div class="col-lg-6 col-7">
+								<h6 class="h2 text-white d-inline-block mb-0"><i class="fa fa-tachometer-alt"></i> 首页</h6>
+							</div>
+							<div class="col-lg-6 col-5 text-right">
+								<a href="/user/shop.html" class="btn btn-sm btn-neutral">新建主机</a>
+								<!--
+								<a href="/user/order.html" class="btn btn-sm btn-neutral">管理主机</a>
+								-->
+							</div>
+						</div>
+						<!-- Card stats -->
+						
+						<div class="row">
+						
+						
+						<div class="col-xl-3 col-md-6">
+								<div class="card card-stats">
+									<!-- Card body -->
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<h5 class="card-title text-uppercase text-muted mb-0">硬币</h5>
+												<span class="h2 font-weight-bold mb-0">{$userInfo.money}</span>
+											</div>
+											<div class="col-auto">
+												<div
+													class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+													<i class="fa fa-wallet"></i>
+												</div>
+											</div>
+										</div>
+										<p class="mt-3 mb-0 text-sm">
+											<span class="text-success mr-2"><i class="fas fa-coins"></i> 余额</span>
+											<span class="text-nowrap">查看你的钱包</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						
+						
+						
+							<div class="col-xl-3 col-md-6">
+								<div class="card card-stats">
+									<!-- Card body -->
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<h5 class="card-title text-uppercase text-muted mb-0">主机</h5>
+												<span class="h2 font-weight-bold mb-0">{$UserHostCount}</span>
+											</div>
+											<div class="col-auto">
+												<div
+													class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+													<i class="ni ni-app"></i>
+												</div>
+											</div>
+										</div>
+										<p class="mt-3 mb-0 text-sm">
+											<span class="text-success mr-2"><i class="fa fa-play"></i> 正常</span>
+											<span class="text-nowrap">运行的主机</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-xl-3 col-md-6">
+								<div class="card card-stats">
+									<!-- Card body -->
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<h5 class="card-title text-uppercase text-muted mb-0">最后登录IP</h5>
+												<span class="h2 font-weight-bold mb-0">{$userInfo.lip}</span>
+											</div>
+											<div class="col-auto">
+												<div
+													class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+													<i class="ni ni-chart-bar-32"></i>
+												</div>
+											</div>
+										</div>
+										<p class="mt-3 mb-0 text-sm">
+											<span class="text-success mr-2"><i class="fa fa-clock" ></i> 登录时间</span>
+											<span class="text-nowrap">{$userInfo.ltime}</span>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-3 col-md-6">
+								<div class="card card-stats">
+									<!-- Card body -->
+									<div class="card-body">
+										<div class="row">
+											<div class="col">
+												<h5 class="card-title text-uppercase text-muted mb-0">账号</h5>
+												<span class="h2 font-weight-bold mb-0">{$userInfo.username}</span>
+											</div>
+											<div class="col-auto">
+												<div
+													class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+													<i class="ni ni-single-02"></i>
+												</div>
+											</div>
+										</div>
+										<p class="mt-3 mb-0 text-sm">
+											<span
+												class="{$userInfo.status?'text-success mr-2':'fa fa-stop'}text-success mr-2"><i
+													class="fa fa-arrow-up"></i> {$userInfo.status?'一切正常':'账号被禁用'}</span>
+											<span class="text-nowrap">你账号的状态</span>
+										</p>
+									</div>
+								</div>
+							</div>
+                       </div>
+                   </div>
+                </div>
+             </div>
+
+    <!-- Page content -->
+
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-8">
+          <div class="card bg-default">
+            <div class="card-body">
+              <!-- Chart -->
+               <h5 class="h3 text-white mb-0">公告</h5><br>
+               <h6 class="text-white mb-0">
+               
+               
+胶囊主机（CAPSULE）是QWQCloud运营的品牌之一，由 1Hosting 运营。<br>
+团队技术成员人均 IDC 从业时间超过 6 年，具有丰富的研发和运维经验。<br>
+CAPSULE 的业务线包括海外、香港、台湾虚拟主机，提供自营二级域名注册。<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+               
+               
+               </h6>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header bg-transparent">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="text-uppercase text-muted ls-1 mb-1"></h6>
+                  <h5 class="h3 mb-0">账户信息</h5>
+                </div>
+                
+                <div class="col text-right">
+                <a href="javascript:userUp();" class="btn btn-sm btn-primary"><i class="fa fa-cog"></i> 修改账户信息</a>
+                </div>
+                
+              </div>
+            </div>
+            <div class="card-body">
+            
+              <!-- Chart -->
+              <!--
+              <div class="chart">
+              --->
+                  
+                  <a href="javascript:;"> <i class="fab fa-qq"></i> 绑定QQ：{$userInfo.qq}</a><br>
+                  <a href="javascript:;"> <i class="fa fa-mobile-alt"></i> 绑定手机：{$userInfo.phone}</a><br>
+                  <a href="javascript:;"> <i class="fa fa-envelope"></i> 绑定邮箱：{$userInfo.email}</a><br>
+                  <a href="javascript:;"> <i class="fa fa-envelope"></i> 认证状态：<i class="fa fa-info-circle" onclick="authMsg()"></i> <span class="label label-danger pull-right r-activity">{$userInfo.emialauth?'已认证':'未认证'}</span></a><br>
+                  <a href="javascript:;"> <i class="fa fa-users"></i> 用户组： <span class="label label-success pull-right r-activity">{$userInfo.usergroup}</span></a><br>
+                  <a href="javascript:;"> <i class="fa fa-clock"></i> 注册时间：{$userInfo.rtime}</a><br>
+                  <a href="javascript:;"> <i class="fa fa-calendar"></i> 注册IP：{$userInfo.rip}</a><br>
+                  
+              <!--    
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<div class="row">
+          <div class="col-lg-12">
+            <section class="panel">
+              <div class="panel-body">
+
+                <div class="modal fade " id="updateUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content-wrap">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><i class="fa fa-cog"></i> 修改账户信息</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        
+                        <div class="modal-body">
+
+                          <form role="form">
+                            <div class="form-group">
+                              <div class="iconic-input">
+                                <i class="fa fa-user"> 账号</i>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="账号" value="{$userInfo.username}">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="iconic-input">
+                                <i class="fa fa-key"> 密码</i>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="不改留空">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="iconic-input">
+                                <i class="fa fa-envelope"> 邮箱</i>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="邮箱" value="{$userInfo.email}">
+                                <p class=" text-danger"> 未认证</p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="iconic-input">
+                                <i class="fab fa-qq"> QQ</i>
+                                <input type="number" class="form-control" name="qq" id="qq" placeholder="QQ" value="{$userInfo.qq}">
+                                <p class="help-block"></p>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="iconic-input">
+                                <i class="fa fa-mobile-alt"> 手机号</i>
+                                <input type="number" class="form-control" name="phone" id="phone" placeholder="手机号" value="{$userInfo.phone}">
+                                <p class="help-block"></p>
+                              </div>
+                            </div>
+
+                          </form>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button data-dismiss="modal" class="btn btn-warning" type="button">关闭</button>
+                          <button class="btn btn-success" type="button" onclick="update()"> 修改</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="EchoMsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content-wrap">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><i class="fas fa-bell"></i> 消息通知</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        </div>
+                        <div class="modal-body text-center" id="msgVal">
+                        
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-danger" type="button" data-dismiss="modal"> OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+ <div class="row">
+        <div class="col-xl-8">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                   <h3 class="mb-0">账单</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/user/order.html" class="btn btn-sm btn-primary">全部账单</a>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th>#</th>
+                    <th>类型</th>
+                    <th>硬币</th>
+                    <th>时间</th>
+                    <th>事件</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                   {volist name="billList" id="bill" empty="&#12288;当前没有记录"}
+                    <td>{$bill.id}</td>
+                    <td>
+                      {switch name="bill.type"}
+                      {case value="0"}支出{/case}
+                      {case value="1"}充值{/case}
+                      {case value="2"}邀请{/case}
+                      {case value="3"}兑换{/case}
+                      {/switch}
+                    </td>
+                    <td>
+                      {switch name="bill.type"}
+                      {case value="0"}-{/case}
+                      {case value="1"}+{/case}
+                      {default /}+
+                      {/switch}
+                      {$bill.money}
+                    </td>
+                    <td>{$bill.ctime}</td>
+                    <td>{$bill.desc}</td>
+                  </tr>
+                  {/volist}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          
+        
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-header border-0">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h3 class="mb-0">主机列表</h3>
+                </div>
+                <div class="col text-right">
+                  <a href="/user/order.html" class="btn btn-sm btn-primary">全部主机</a>
+                </div>
+                
+                <!--
+                </div>
+                </div>
+                -->
+
+            
+            <div class="table-responsive">
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush">
+                <tbody>
+									<div class="list-group">&#12288;
+										{volist name="hostList" id="host" empty="当前账户未拥有主机"}
+										<a class="list-group-item " href="/user/host/{$host.id}.html">{$host.domain}</a>
+										{/volist}
+										{$hostList?'':''}
+									
+								</tbody>
+							</table>
+           </div>  
+             </div> 
+             </div>
+          
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="footer pt-0">
+        {include file="public/footer"}
+      </footer>
+    
+  
+  <script type="text/javascript">
+    function userUp(){
+      $('#updateUser').modal('show');
+    }
+
+    function update(){
+      $('#updateUser').modal('hide');
+      var username = $('#updateUser #username').val();
+      var password = $('#updateUser #password').val();
+      var email = $('#updateUser #email').val();
+      var qq = $('#updateUser #qq').val();
+      var phone = $('#updateUser #phone').val();
+      $.post('', {username:username,password:password,email:email,qq:qq,phone:phone}, function(data, textStatus, xhr) {
+        if(data.code!=200){
+          EchoMsg('修改失败:'+data.msg,'/user/index.html');
+        }else{
+          EchoMsg(data.msg,'/user/index.html');
+        }
+
+      });
+    }
+
+    function authMsg(){
+      $('#msgVal').html("为了增加用户体验度，系统会发送一些系统提醒如：主机开通、主机到期、找回密码等操作，会使用到邮箱，所以请你务必进行认证，否则将收不到此类提醒");
+      $('#EchoMsg').modal('show');
+    }
+    function InvitationMsg(msg){
+      $('#msgVal').html(msg);
+      $('#EchoMsg').modal('show');
+    }
+    var clipboard = new ClipboardJS('#copyValue');
+    clipboard.on('success',function(e){
+     e.clearSelection();
+     InvitationMsg('复制成功');
+   });
+    clipboard.on('error',function(e){
+     e.clearSelection();
+     InvitationMsg('复制失败');
+   });
+    function EchoMsg(msg,local){
+      $('#msgVal').html(msg);
+      $('#EchoMsg').modal('show');
+      if(local){
+        $('#EchoMsg').on('hidden.bs.modal', function () {
+          window.location.href = local;
+        })
+      }
+    }
+  </script>
+  
+  
+  
+  
+  
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Optional JS -->
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/chart.js/dist/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+  <!-- Argon JS -->
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/js/argon.js?v=1.1.0"></script>
+  <!-- Demo JS - remove this in your project -->
+  <script src="https://cdn.jsdelivr.net/gh/7doger/CAPSULE_Themes@1.1/public/CAPSULE.TOP/assets/js/demo.min.js"></script>
+</body>
+
+</html>
